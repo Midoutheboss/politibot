@@ -3,11 +3,12 @@
 import discord
 import random
 import sqlite3
+import os
 from discord import app_commands
 from discord.ext import commands as cdm
 
 intents = discord.Intents.all()
-token = "MTQ4ODk5NzMyMDg2MjIwMzkzNQ.G707fK.33kFX1nhs0inQEyVM6qfg2013wKp0QowSZ2znQ"
+token = os.getenv("TOKEN")
 
 bot = cdm.Bot(command_prefix=">", intents=intents)
 
